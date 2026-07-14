@@ -1,0 +1,55 @@
+/* Esto hace que el padding no desacomode los cuadros */
+* {
+    box-sizing: border-box;
+}
+
+/* Diseño del formulario */
+.contenedor {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    font-family: Arial;
+}
+
+/* Estilo de los campos */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Cuando el campo está BIEN escrito → BORDE VERDE */
+input:valid {
+    border-color: green;
+    background: #eaffea;
+}
+
+/* Cuando el campo está MAL escrito → BORDE ROJO */
+input:invalid {
+    border-color: red;
+    background: #ffeaea;
+}
+
+/* Cuando el campo está vacío → BORDE GRIS (normal) */
+input:placeholder-shown {
+    border-color: #ccc;
+    background: white;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
